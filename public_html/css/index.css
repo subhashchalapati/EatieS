@@ -1,0 +1,30 @@
+#Homeoverlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+div#Homeoverlay div#HomeOverlayCard{
+    border:  whitesmoke ;
+    box-shadow: 5px 10px 20px black;
+    border-radius: 20px;
+    position: absolute; 
+    margin-top: 12%;
+    margin-left: 32%;
+    height: 55%; width: 35% 
+} 
+div#Homeoverlay div#HomeOverlayCard img#HomeOverlayCardShit{
+    width: 25px;float: right; margin-right: 10px; margin-top: 10px;
+    /*border: dotted red ;*/
+    border-radius:  37% 38% 37% 37%;
+    box-shadow: inset 0px 2px 10px whitesmoke;
+    box-shadow: 0px 8px 20px whitesmoke;
+    /*background-color: smokewhite;*/
+}
