@@ -16,12 +16,12 @@ function off() {
 
 
 
-function SlideImage() {
-        var slideIndex = 1;
+//function SlideImage() {
+        var slideIndex = 2;
         showDivs(slideIndex);
         function plusDivs(n) {
           showDivs(slideIndex += n);
-          alert("m+1");
+          
             }
         function currentDiv(n) {
           showDivs(slideIndex = n);
@@ -47,4 +47,4 @@ function SlideImage() {
                   console.log("x" + slideIndex);
         }
 
-}
+//}
