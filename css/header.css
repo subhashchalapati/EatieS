@@ -1,0 +1,98 @@
+e/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Mar, 2019, 4:13:37 PM
+    Author     : subha
+*/
+/*
+html{
+    max-width:500px;
+}*/
+html,body{
+    background-color: #f6f6f6;
+}
+div#head{
+    white-space: nowrap;
+    padding-top: 0%;
+    height: 70px;
+    width: 100%;
+    opacity: 0.9;
+    /*overflow: hidden;*/
+    overflow-style: auto;
+/*overflow-x: hidden;*/
+/*overflow-y: auto;*/
+    /*background-color: gray;*/
+}
+div#list{
+   /*display: none;*/    
+   /*background-color: pink;*/
+   position: absolute;
+   padding-left: 62%;
+   float: right;
+   margin-right: 10%;
+   margin-top:   2%;
+   width: auto;
+}
+div#list ul{
+    width: auto;
+    /*float: right;*/
+ /*background-color: red;*/     
+}
+div#list ul li {
+    /*background-color: lightblue;*/
+    /*opacity: 1;*/
+    /*border-radius: 20px 10px 2px 100px;*/
+    list-style-type: none;
+    
+    font-size: 20px;
+    padding: 10px;
+    display: inline;
+}
+div#list ul li button{
+    background-color: transparent; /*background-color: red;*/
+    border: none;
+    font-size: 20px;
+}
+div#Logotext{
+    width: 20px;
+    font-size: 50px;
+    font-family: 'Fredoka One';
+    color: #FFC107;
+    /*, cursive ==>can also be used*/     /*border: 1px solid black;position: inherit;  padding-top: 50px; padding-left: 200px;*/
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+/*animation*/ 
+    animation: sha 0.1s infinite;
+    animation-duration: 5s;
+    text-shadow: 500px 200px 500px whitesmoke;
+    animation-iteration-count: 1;
+}
+@keyframes sha{
+        99.9%{text-shadow: 1px 1px 3px #FFC107;};
+}
+@font-face {
+/* Rey read this latin got this from:- https://fonts.google.com/specimen/Fredoka+One?selection.family=Fredoka+One*/
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fredoka One'), local('FredokaOne-Regular'), url(../rest/resources/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2) format('woff2');
+  /*unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;*/
+}
+div.loader {
+  border: 16px solid #fc8019 ;
+  border-radius: 50%;
+  border-top: 16px dotted #FFC107;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(1deg); } 
+  50% { transform: rotate(90deg); }
+  100% { transform: rotate(360deg); }
+}
+
