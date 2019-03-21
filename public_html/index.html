@@ -45,35 +45,37 @@ and open the template in the editor.
    
     
     
-    <div id="OffreSlide" style=" margin-top: 17px; height: 250px; border: double gray">
+    <!--<div id="OffreSlide" style=" margin-top: 17px; height: 250px; border: double gray">-->
+    <div id="OffresSlide" style="border: none;">
     <!--start-->    
     <style onload="SlideImage()">/*Rey read this      this is for onlode method only don't write any thing hear*/    </style>
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <style>
     .mySlides {display:none}
     #FirstImage {display: block}
-.w3-badge {height:13px;width:13px;padding:10}
+/*.w3-badge {height:13px;width:13px;padding:10}*/
 </style>
-<div id='ImageSlide' class="w3-content w3-display-container" style="max-width:800px">
+<div id='ImageSlide' class="w3-content w3-display-container">
 
-  <img id="FirstImage" class="mySlides" src="img/img1.jpg" style="width:75%">
-  <img class="mySlides" src="img/img2.jpg" style="width:75%">
-  <img class="mySlides" src="img/img3.jpg" style="width:75%">
+  <img class="mySlides" ondrage-right="plusDivs(-1)" id="FirstImage" src="img/img1.jpg">
+  <img class="mySlides" src="img/img2.jpg" >
+  <img class="mySlides" src="img/img3.jpg" >
+  <img class="mySlides" src="img/img4.jpg" >
   <!--<img class="mySlides" src="img/img4.jpg" style="width:25%">-->
-      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <button class="demo" onclick="currentDiv(1)"><h1>1</h1></button>
-        <button class="demo" onclick="currentDiv(2)"><h1>2</h1></button>
-        <button class="demo" onclick="currentDiv(3)"><h1>3</h1></button>
-        <button class="demo" onclick="currentDiv(4)"><h1>4</h1></button>
+      <div  style="width:100%">
+          <button class="OnPhotoBut" id="OnPhotoButLeft" style=" background-color: transparent;" onclick="plusDivs(-1)">&#10094;</button> 
+          <button class="OnPhotoBut" id="OnPhotoButRight" style=" background-color: transparent;" onclick="plusDivs(1)">&#10095;</button>
+          <div>
+            <button class="OnPhotoButPoints" onclick="currentDiv(1)" style="left:40%; top: 200px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(2)" style="left:45%; top: 200px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(3)" style="left:50%; top: 200px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(4)" style="left:55%; top: 200px;"></button><br>
+         </div>
       </div>
-  <button  onclick="plusDivs(-1)">+</button>
-  <button onclick="plusDivs(1)">-</button>
+<!--  <button  onclick="plusDivs(-1)">+</button>
+  <button onclick="plusDivs(1)">-</button>-->
 </div>
-
        <!--ends--> 
-        
     </div> 
     
     
@@ -96,7 +98,7 @@ and open the template in the editor.
     
     
 <div id="Homeoverlay">
-<!--<style onload="on()"></style>-->
+<style onload="on()"></style>
         <div id="HomeOverlayCard">
                 <img id="HomeOverlayCardShit" onclick="off()" src="img/shit.ico">
                 <h1 style="color: white; text-align: center; ">Don't wast your time! <br> download the app now </h1>
