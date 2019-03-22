@@ -16,16 +16,26 @@ function off() {
 //function SlideImage() {
 var slideIndex = 1;
 showDivs(slideIndex);
+
+
+//function AutoAddSlide() {
+// plusDivs(1);
+//
+//}
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
  }
 function currentDiv(n) {
  showDivs(slideIndex = n);
+
 //         document.getElementsByClassName("OnPhotoButPoints").style.backgroundColor="transparent";
 }
 function showDivs(n) {
+
   var i;
   var x = document.getElementsByClassName("mySlides");
+//  x.style.animation
   var dots = document.getElementsByClassName("OnPhotoButPoints");
   if (n > x.length){
       slideIndex = 1;
@@ -37,13 +47,14 @@ function showDivs(n) {
     x[i].style.display = "none";  
     }
   x[slideIndex-1].style.display = "block";  
-    console.log(n);
+//    console.log(n);
     for(var j=0; j < dots.length; j++){
         dots[j].style.backgroundColor="transparent";
         }
-    dots[slideIndex-1].style.backgroundColor="lightgray";
+    dots[slideIndex-1].style.backgroundColor="white";
+        
 }
-
+//setTimeout(AutoAddSlide, 4000);
 //}
 
 

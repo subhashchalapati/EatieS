@@ -14,7 +14,7 @@ and open the template in the editor.
         <link rel="shortcut icon" href="css/images/EatieLogo.png">
         <!--<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">--> 
     </head>
-<body>
+<body >
 <div id="head">
            <!--<img src="css/images/EatieLogo1.png" alt=""/>-->
                <div id="Logotext">Eatie</div>      
@@ -23,7 +23,7 @@ and open the template in the editor.
                         <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                            -->
                             <li><button href="#" >Home</button></li>
                             <li><button href="#" >contact us</button></li>
-                            <li><button href="#" >download</button></li>
+                            <li><button onclick="location.href='https://play.google.com/store/apps/details?id=com.immutable.eatie.user.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'" >download</button></li>
                             <li>|</li>
                             <li><button href="#" >About us</button></li>
                         </ul>                       
@@ -48,16 +48,16 @@ and open the template in the editor.
     <!--<div id="OffreSlide" style=" margin-top: 17px; height: 250px; border: double gray">-->
     <div id="OffresSlide" style="border: none;">
     <!--start-->    
-    <style onload="SlideImage()">/*Rey read this      this is for onlode method only don't write any thing hear*/    </style>
+    <style onload="currentDiv(1)">/*Rey read this      this is for onlode method only don't write any thing hear*/    </style>
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <style>
     .mySlides {display:none}
     #FirstImage {display: block}
 /*.w3-badge {height:13px;width:13px;padding:10}*/
 </style>
-<div id='ImageSlide' class="w3-content w3-display-container">
+<div id='ImageSlide' >
 
-  <img class="mySlides" ondrage-right="plusDivs(-1)" id="FirstImage" src="img/img1.jpg">
+  <img class="mySlides" onclick="" id="FirstImage" src="img/img1.jpg">
   <img class="mySlides" src="img/img2.jpg" >
   <img class="mySlides" src="img/img3.jpg" >
   <img class="mySlides" src="img/img4.jpg" >
@@ -66,12 +66,13 @@ and open the template in the editor.
           <button class="OnPhotoBut" id="OnPhotoButLeft" style=" background-color: transparent;" onclick="plusDivs(-1)">&#10094;</button> 
           <button class="OnPhotoBut" id="OnPhotoButRight" style=" background-color: transparent;" onclick="plusDivs(1)">&#10095;</button>
           <div>
-            <button class="OnPhotoButPoints" onclick="currentDiv(1)" style="left:40%; top: 200px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(2)" style="left:45%; top: 200px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(3)" style="left:50%; top: 200px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(4)" style="left:55%; top: 200px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(1)" style="left:47%; top: 240px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(2)" style="left:49%; top: 240px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(3)" style="left:51%; top: 240px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(4)" style="left:53%; top: 240px;"></button><br>
          </div>
       </div>
+  <!--<button onclick="setTimeout(AutoAddSlide, 1000)">b</button>-->
 <!--  <button  onclick="plusDivs(-1)">+</button>
   <button onclick="plusDivs(1)">-</button>-->
 </div>
@@ -97,10 +98,10 @@ and open the template in the editor.
     
     
     
-<div id="Homeoverlay">
-<style onload="on()"></style>
+<div id="Homeoverlay" onclick="off()">
+<!--<style onload="on()"></style>-->
         <div id="HomeOverlayCard">
-                <img id="HomeOverlayCardShit" onclick="off()" src="img/shit.ico">
+                <img id="HomeOverlayCardShit" onclick="off()" src="img/x.png">
                 <h1 style="color: white; text-align: center; ">Don't wast your time! <br> download the app now </h1>
                 <a style="margin: 25%; " href='https://play.google.com/store/apps/details?id=com.immutable.eatie.user.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                 <img style="width: 250px;" alt='Get it on Google Play' 
@@ -108,7 +109,6 @@ and open the template in the editor.
                 </a>       
        </div>      
 </div>
-    
     
              
     
@@ -120,29 +120,47 @@ and open the template in the editor.
 
 
 
-
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
 
 <div id="footer">
-    <h2>About US</h2>
-    <div id="Flist">
-    <ul style="list-style-type: none; float: left;  max-width: inherit;">
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                            -->
-                            <li><a href="#" >Home</a></li>
-                            <li><a href="#" >contact us</a></li>
-                            <li><a href="#" >download</a></li>
-                            <li></li>
-                            <li><a href="#" >download1</a></li>
-                        </ul>               
-    <ul style="list-style-type: none; float: right; padding-right: 50px; max-width: inherit;">
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                            -->
-                            <li><a href="#" >Home</a></li>
-                            <li><a href="#" >contact us</a></li>
-                            <li><a href="#" >download</a></li>
-                            <li></li>
-                            <li><a href="#" >download1</a></li>
-                        </ul>  
-    </div>
-    <!--<div id="overlay" onclick="off()"><h1 style="color:red;"> welcome to eatie </h1></div>-->  
+    <h2> &nbsp;&nbsp; Eatie</h2>
+    <table style="width: 95%">
+<tr style="left: 10;" >
+    <th>Company</th>
+    <th>Resources</th> 
+    <th>Developers</th>
+    <th>Product Help</th>
+ </tr>
+  <tr>
+    <td><a href="#">About</a></td>
+    <td><a href="#">Privacy</a></td>
+    <td><a href="#">Test New Features</a></td>
+    <td><a href="#">Support</a></td>
+  </tr>
+  <tr>
+    <td><a href="#">Careers</a></td>
+    <td><a href="#">Contacts</a></td>
+    <td><a href="#">Join with us</a></td>
+    <td><a href="#">File a Bug</a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><a href="#">Internship</a></td>
+    <td><a href="#">More</a></td>
+  </tr>
+                                  </table>
+    
+    <hr>
+<p>we are doing this business for NO profit* i,e., giving them to users as offers </p>
 </div>
+
+
+
+
 </body>
 </html>

@@ -1,3 +1,7 @@
+html{
+ overflow-x:hidden;
+}
+
 #Homeoverlay {
   position: fixed;
   display: none;
@@ -18,15 +22,19 @@ div#Homeoverlay div#HomeOverlayCard{
     position: absolute; 
     margin-top: 12%;
     margin-left: 32%;
-    height: 55%; width: 35% ;
+    height: 55%;
+    max-height: 500px;
+    width: 35% ;
+    max-width: 500px;
     background-color: rgba(0,0,0,0.6);
 } 
 div#Homeoverlay div#HomeOverlayCard img#HomeOverlayCardShit{
     width: 25px;float: right; margin-right: 10px; margin-top: 10px;
     /*border: dotted red ;*/
     border-radius:  37% 38% 37% 37%;
-    box-shadow: inset 0px 2px 10px whitesmoke;
-    box-shadow: 0px 8px 20px whitesmoke;
+    /*box-shadow: inset 0px 2px 10px whitesmoke;*/
+    /*box-shadow: 0px 8px 20px whitesmoke;*/
+    background-color: transparent;
     /*background-color: smokewhite;*/
 }
 
@@ -53,6 +61,15 @@ div#ImageSlide{
 /*   display: inline-block;*/
 }
 
+
+
+
+
+
+
+
+
+
 img.mySlides{
     position: absolute;
     top: 13%;
@@ -65,8 +82,20 @@ img.mySlides{
     object-fit: cover;
     /*padding-left: 50%;*/
     
-
+    
+      animation-name: MySlidesDisplayDelay;
+  animation-duration: 2s;
+ }
+@keyframes MySlidesDisplayDelay {
+   0%{ right:-200px; opacity:0; }
+   100%{ right:75px; opacity:1; }
 }
+
+
+
+
+
+
 
 button#OnPhotoButLeft{
     /*position: relative;*/
@@ -78,8 +107,9 @@ button#OnPhotoButLeft{
     /*z-index: -1;*/
     /*top: 18%;*/
     top: 72%;
-    left: 3%;
-    text-shadow:-10px 10px 10px #7b7b7b;
+    left: 8%;
+/*    text-shadow:-10px 10px 10px #7b7b7b;*/
+text-shadow:-10px 10px 10px #ffffff;
     border: none;
 }
 button#OnPhotoButRight{
@@ -91,21 +121,21 @@ button#OnPhotoButRight{
     /*z-index: -1;*/
     /*top0: 18%;*/
     top: 75%;
-    right: 3%;
-    text-shadow:10px 10px 10px #7b7b7b;
+    right: 8%;
+    text-shadow:10px 10px 10px #ffffff;
  border: none;   
 }
 
 button.OnPhotoButPoints{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    border: none;
+    border-right-color: white;
     color: red;
     background-color: transparent;
     box-shadow: 1px 1px 15px white;
     position: absolute;
-    padding: 10px;
+    padding: 1px;
     top: 18%;
     left: 10%;
     }
