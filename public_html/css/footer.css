@@ -7,15 +7,30 @@ and open the template in the editor.
     Created on : 20 Mar, 2019, 3:34:16 PM
     Author     : subha
 */
+
+
 div#footer{
-        position:relative;
+        position:absolute;
         background-color: #e5eaf0;
         color: gray;
-        bottom:0;     
+        bottom:0px;     
+        
         height: 150px;
         width: calc(100% - 10px);
         opacity: 0.9;   /*white-space: nowrap;*/    /*padding-bottom: 100%;*/ /*overflow: hidden;*/    /*overflow-style: auto;*//*overflow-x: hidden;*//*overflow-y: auto;*//*background-color: gray;*/
 }
+/*@media screen and (min-width: 900px) {
+        div#footer{
+        position:relative;
+        background-color: #e5eaf0;
+        color: gray;
+        bottom:0px;             
+        height: 150px;
+        width: calc(100% - 10px);
+        opacity: 0.9;  
+        }
+}*/
+
 div#footer h2{
         font-family: 'Fredoka One'; 
         font-weight: 100;
