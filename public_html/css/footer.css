@@ -15,7 +15,7 @@ div#footer{
         color: gray;
         bottom:0px;     
         
-        height: 150px;
+        height: 220px;
         width: calc(100% - 10px);
         opacity: 0.9;   /*white-space: nowrap;*/    /*padding-bottom: 100%;*/ /*overflow: hidden;*/    /*overflow-style: auto;*//*overflow-x: hidden;*//*overflow-y: auto;*//*background-color: gray;*/
 }
@@ -61,6 +61,7 @@ div#footer p{
 hr{
   margin-left: auto;
   margin-right: auto;
-    border-width: 5px;
+    border-width: 2px;
+
 }
 

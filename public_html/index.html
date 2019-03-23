@@ -18,7 +18,8 @@ and open the template in the editor.
     
     <!--overlay starts-->    
     <div id="Homeoverlay" onclick="off()">
-<style onload="on()"></style>
+<!--<style onload="on()"></style>-->
+<style onload="setTimeout( on, 3000)"></style>
 
         <div id="HomeOverlayCard">
                 <img id="HomeOverlayCardShit" onclick="off()" src="img/x.png">
@@ -88,11 +89,13 @@ and open the template in the editor.
 </style>
 <div id='ImageSlide' >
 
-  <img class="mySlides" id="FirstImage" src="img/img1.jpg">
-  <img class="mySlides" src="img/img2.jpg" >
-  <img class="mySlides" src="img/img3.jpg" >
-  <img class="mySlides" src="img/img4.jpg" >
+  <img class="mySlides" id="FirstImage" src="img/img1.jpeg">
+  <img class="mySlides" src="img/img2.jpeg" >
+  <!--<img class="mySlides" src="img/img2.jpg" >-->
+  <img class="mySlides" src="" >
+  <img class="mySlides" src="img/img4.jpeg" >
   <!--<img class="mySlides" src="img/img4.jpg" style="width:25%">-->
+  <style onload="setInterval( plusDivs , 5000, 1 )"></style>
       <div  style="width:100%">
           <button class="OnPhotoBut" id="OnPhotoButLeft" style=" background-color: transparent;" onclick="plusDivs(-1)">&#10094;</button> 
           <button class="OnPhotoBut" id="OnPhotoButRight" style=" background-color: transparent;" onclick="plusDivs(1)">&#10095;</button>
