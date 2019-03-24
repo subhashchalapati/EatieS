@@ -14,6 +14,13 @@ html{
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
+  
+  animation-name: HomeoverlayDelay;
+  animation-duration: 1s;
+ }
+@keyframes HomeoverlayDelay {
+   0%{opacity:0; }
+   100%{opacity:1; }
 }
 div#Homeoverlay div#HomeOverlayCard{
     border:  whitesmoke ;
@@ -27,6 +34,7 @@ div#Homeoverlay div#HomeOverlayCard{
     width: 35% ;
     max-width: 500px;
     background-color: rgba(0,0,0,0.6);
+/*    pointer-events: none;*/
 } 
 div#Homeoverlay div#HomeOverlayCard img#HomeOverlayCardShit{
     width: 25px;float: right; margin-right: 10px; margin-top: 10px;
@@ -43,18 +51,20 @@ div#Homeoverlay div#HomeOverlayCard img#HomeOverlayCardShit{
 
 div#OffresSlide{
 
+    position: absolute;
        width: 100%;
        max-width: 100%;
-       height: 250px;
-       display: inline-block;
-/*       background-color: red;*/
+       height: 350px;
+       top: 18%;
+       /*display: inline-block;*/
+       /*background-color: red;*/
        color: red;
        
 }
 
 div#ImageSlide{
    position: absolute;
-   top: 20%;
+   /*top: 20%;*/
    width:100%; ;
 /*   height:250px; 
    max-height:250px;*/
@@ -72,10 +82,11 @@ div#ImageSlide{
 
 img.mySlides{
     position: absolute;
-    top: 13%;
+    /*top: 13%;*/
     right: 5%;
     width: 90%; 
-    height: 250px; 
+    height: 350px; 
+    /*height: inherit;*/ 
     border-radius: 30px 30px 30px 30px;
     box-shadow: 0px 36px 31px -6px rgba(240,233,130,0.45);
     border-
@@ -83,13 +94,16 @@ img.mySlides{
     /*padding-left: 50%;*/
     
     
-      animation-name: MySlidesDisplayDelay;
+  animation-name: MySlidesDisplayDelay;
   animation-duration: 2s;
  }
 @keyframes MySlidesDisplayDelay {
    0%{ right:-200px; opacity:0; }
    100%{ right:75px; opacity:1; }
 }
+
+
+
 
 
 
@@ -106,12 +120,14 @@ button#OnPhotoButLeft{
     position: absolute;
     /*z-index: -1;*/
     /*top: 18%;*/
-    top: 72%;
+    top: 135%;
     left: 8%;
 /*    text-shadow:-10px 10px 10px #7b7b7b;*/
 text-shadow:-10px 10px 10px #ffffff;
     border: none;
-}
+    animation-name: OnPhotoButDelay;
+  animation-duration: 6s;
+}   
 button#OnPhotoButRight{
     /*position: relative;*/
     /*color: #7b7b7b;*/
@@ -120,15 +136,42 @@ button#OnPhotoButRight{
     position: absolute;
     /*z-index: -1;*/
     /*top0: 18%;*/
-    top: 75%;
+    top: 135%;
     right: 8%;
     text-shadow:10px 10px 10px #ffffff;
  border: none;   
+ animation-name: OnPhotoButDelay;
+  animation-duration: 6s;
+}
+@keyframes OnPhotoButDelay {
+   0%{opacity:0; }
+   100%{opacity:1; }
+}
+button#OnPhotoButRight:active{
+ animation-name: OnPhotoButFocus;
+  animation-duration: 2s;
+}
+button#OnPhotoButLeft:active{
+ animation-name: OnPhotoButFocus;
+  animation-duration: 2s;
+}
+@keyframes OnPhotoButFocus {
+   1%{text-shadow:10px 10px 10px #ffffff; }
+   50%{text-shadow:10px 10px 10px red; }
+   100%{text-shadow:10px 10px 10px #ffffff; }
 }
 
+
+
+
+
+
+
+
+
 button.OnPhotoButPoints{
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height:10px;
     border-radius: 50%;
     border-right-color: white;
     color: red;
@@ -136,8 +179,9 @@ button.OnPhotoButPoints{
     box-shadow: 1px 1px 15px white;
     position: absolute;
     padding: 1px;
-    top: 18%;
-    left: 10%;
+    top: 400%;
+    animation-name: OnPhotoButDelay;
+      animation-duration: 6s;
     }
 
 

@@ -63,6 +63,11 @@ function showDivs(n) {
 //
 //var MainHed = document.getElementById('head');
 //var AboutHed = document.getElementById('Aboutehead');
+
+
+
+
+
 function copy(){
     console.log("hello About");
                                     //var MainHed = document.getElementById("head");

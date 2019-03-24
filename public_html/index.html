@@ -19,9 +19,10 @@ and open the template in the editor.
     <!--overlay starts-->    
     <div id="Homeoverlay" onclick="off()">
 <!--<style onload="on()"></style>-->
-<style onload="setTimeout( on, 3000)"></style>
+<style onload="setTimeout( on, 5100)"></style>
 
-        <div id="HomeOverlayCard">
+<div id="HomeOverlayCard" style="pointer-events: none;" >
+            <!--<script>$('#HomeOverlayCard')click(function(){return false;});</script>-->
                 <img id="HomeOverlayCardShit" onclick="off()" src="img/x.png">
                 <h1 style="color: white; text-align: center; ">Don't wast your time! <br> download the app now </h1>
                 <a style="margin: 25%; " href='https://play.google.com/store/apps/details?id=com.immutable.eatie.user.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
@@ -92,18 +93,18 @@ and open the template in the editor.
   <img class="mySlides" id="FirstImage" src="img/img1.jpeg">
   <img class="mySlides" src="img/img2.jpeg" >
   <!--<img class="mySlides" src="img/img2.jpg" >-->
-  <img class="mySlides" src="" >
+  <img class="mySlides" src="img/img2.jpg" >
   <img class="mySlides" src="img/img4.jpeg" >
   <!--<img class="mySlides" src="img/img4.jpg" style="width:25%">-->
-  <style onload="setInterval( plusDivs , 5000, 1 )"></style>
+  <style onload="setInterval( plusDivs , 10000, 1 )"></style>
       <div  style="width:100%">
           <button class="OnPhotoBut" id="OnPhotoButLeft" style=" background-color: transparent;" onclick="plusDivs(-1)">&#10094;</button> 
           <button class="OnPhotoBut" id="OnPhotoButRight" style=" background-color: transparent;" onclick="plusDivs(1)">&#10095;</button>
           <div>
-            <button class="OnPhotoButPoints" onclick="currentDiv(1)" style="left:47%; top: 240px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(2)" style="left:49%; top: 240px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(3)" style="left:51%; top: 240px;"></button><br>
-            <button class="OnPhotoButPoints" onclick="currentDiv(4)" style="left:53%; top: 240px;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(1)" style="left:47%;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(2)" style="left:49%;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(3)" style="left:51%;"></button><br>
+            <button class="OnPhotoButPoints" onclick="currentDiv(4)" style="left:53%;"></button><br>
          </div>
       </div>
   <!--<button onclick="setTimeout(AutoAddSlide, 1000)">b</button>-->
@@ -116,7 +117,12 @@ and open the template in the editor.
     <!--OffersSlide ends-->
     
     
-    
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
     
     
     
@@ -139,7 +145,7 @@ and open the template in the editor.
 <br><br><br><br><br><br><br><br><br><br><br>
 
     <!--Footer starts-->
-<div id="footer">
+    <div id="footer" style="position:relative">
     <h2> &nbsp;&nbsp; Eatie</h2>
     <table style="width: 95%">
 <tr style="left: 10;" >
@@ -156,7 +162,7 @@ and open the template in the editor.
   </tr>
   <tr>
     <td><a href="#">Careers</a></td>
-    <td><a href='contact_us.html'>Contacts</a></td>
+    <td><a href="contact.html">Contacts</a></td>
     <td><a href="#">Join with us</a></td>
     <td><a href="#">File a Bug</a></td>
   </tr>
@@ -169,7 +175,9 @@ and open the template in the editor.
                                   </table>
     
     <hr>
-<p>we are doing this business for NO profit* i,e., giving them to users as offers </p>
+    <p style="float: left ; display:inline">We are doing this business for NO profit* i,e., giving them to users as offers</p>
+    <p style="float: right; display:inline"> eatie web  version 0.01 <a href="https://github.com/subhashchalapati/EatieS.git" target="_blank">Github</a> GUI licensed </p>
+    <p style="position: absolute; right: 45%; text-align: center;" > Email Us <a href='mailto:eatie2019@gmail.com?subject=Mail from eatie'> eatie2018@gmail.com</a></p>
 </div>
 <!--Footer ends-->
 
